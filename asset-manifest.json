@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/dodo/static/js/main.71aa8d12.chunk.js",
-    "main.js.map": "/dodo/static/js/main.71aa8d12.chunk.js.map",
-    "runtime-main.js": "/dodo/static/js/runtime-main.15962ca3.js",
-    "runtime-main.js.map": "/dodo/static/js/runtime-main.15962ca3.js.map",
-    "static/js/2.c4b93ded.chunk.js": "/dodo/static/js/2.c4b93ded.chunk.js",
-    "static/js/2.c4b93ded.chunk.js.map": "/dodo/static/js/2.c4b93ded.chunk.js.map",
-    "index.html": "/dodo/index.html",
-    "static/js/2.c4b93ded.chunk.js.LICENSE.txt": "/dodo/static/js/2.c4b93ded.chunk.js.LICENSE.txt"
+    "main.js": "/dodos/static/js/main.74ae018f.chunk.js",
+    "main.js.map": "/dodos/static/js/main.74ae018f.chunk.js.map",
+    "runtime-main.js": "/dodos/static/js/runtime-main.11dc7b29.js",
+    "runtime-main.js.map": "/dodos/static/js/runtime-main.11dc7b29.js.map",
+    "static/js/2.355b070e.chunk.js": "/dodos/static/js/2.355b070e.chunk.js",
+    "static/js/2.355b070e.chunk.js.map": "/dodos/static/js/2.355b070e.chunk.js.map",
+    "index.html": "/dodos/index.html",
+    "static/js/2.355b070e.chunk.js.LICENSE.txt": "/dodos/static/js/2.355b070e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.15962ca3.js",
-    "static/js/2.c4b93ded.chunk.js",
-    "static/js/main.71aa8d12.chunk.js"
+    "static/js/runtime-main.11dc7b29.js",
+    "static/js/2.355b070e.chunk.js",
+    "static/js/main.74ae018f.chunk.js"
   ]
 }
