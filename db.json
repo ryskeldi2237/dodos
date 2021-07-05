@@ -1,0 +1,436 @@
+{
+  
+    "pizzas": [
+      {
+        "id": 0,
+        "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
+        "name": "Пепперони Фреш",
+        "types": [0, 1],
+        "sizes": [0,1,2],
+        "price": 803,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/a76bab5c64fe463b81bbf7aff7dacd29_584x584.jpeg",
+        "name": "Додо",
+        "types": [0],
+        "sizes": [0],
+        "price": 245,
+        "category": 1,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/0d7a49985ddd45b3aaaf28c903d9b9cb_584x584.jpeg",
+        "name": "Мясная",
+        "types": [0],
+        "sizes": [0,2],
+        "price": 295,
+        "category": 1,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/65fdef955be74e8c9d771b5e43ae9c71_584x584.jpeg",
+        "name": "Овощи и грибы",
+        "types": [1],
+        "sizes": [0,1,2],
+        "price": 275,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/26fa2948b6c74113afb9d09a3262fc26_584x584.jpeg",
+        "name": "Ветчина и грибы",
+        "types": [1],
+        "sizes": [2],
+        "price": 415,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/72c7882f35ad4db1805bb43f09717d8d_584x584.jpeg",
+        "name": "Аррива",
+        "types": [0],
+        "sizes": [1,2],
+        "price": 580,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/f48c7f560e274db19414a3fd87358927_584x584.jpeg",
+        "name": "Нежный лосось",
+        "types": [0,1],
+        "sizes": [0,1,2],
+        "price": 675,
+        "category": 1,
+        "rating": 9
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e8a8ded1f8154d11ab5065dc5208b187_584x584.jpeg",
+        "name": "Маргарита",
+        "types": [0, 1],
+        "sizes": [0,1,2],
+        "price": 450,
+        "category": 4,
+        "rating": 10
+      }
+    ],
+    "snacks" : [
+      {
+        "id": 0,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/c7438015dcc24d599daa02db7ff79be6_584x584.jpeg",
+        "name": "Додстер",
+        "types": [0, 1],
+        "sizes": [0, 2],
+        "price": 145,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/2eb7be57cf35400b80ccddcd48d2a374_584x584.jpeg",
+        "name": "Грибной Cтартер",
+        "types": [0],
+        "sizes": [0, 1],
+        "price": 129,
+        "category": 1,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/8236fffec89f4bc78b0e7af8ea8432e3_584x584.jpeg",
+        "name": "Острый Cтартер",
+        "types": [0 , 1],
+        "sizes": [0,1, 2],
+        "price": 129,
+        "category": 1,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/686c7a2974e54b6a97ace0ae09b831fa_584x584.jpeg",
+        "name": "Мясной Стартер",
+        "types": [1],
+        "sizes": [1, 2 ],
+        "price": 129,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d0eaee06408e4b86a1eab038005d51d9_584x584.jpeg",
+        "name": "Ланчбокс с крыльями барбекю",
+        "types": [0, 1],
+        "sizes": [ 0],
+        "price": 275,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/9849e5d652854f71a302e570cb9e16a3_584x584.jpeg",
+        "name": "Ланчбокс с куриными кусочками",
+        "types": [0],
+        "sizes": [ 0 , 1 ,2],
+        "price": 275,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d49649973ddc4bf9bb8419fe57898139_584x584.jpeg",
+        "name": "Рулетики с сыром 16 шт.",
+        "types": [0 , 1],
+        "sizes": [ 1,  2],
+        "price": 195,
+        "category": 1,
+        "rating": 8
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/b8624b6702914645a5ff93168b08b2c2_584x584.jpeg",
+        "name": "Салат Цезарь",
+        "types": [ 1],
+        "sizes": [ 1],
+        "price": 179,
+        "category": 3,
+        "rating": 8
+      }
+    ],
+    "desserts" : [
+      {
+        "id": 0,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/86fe757e450745b295c8b1645efc2a3f_584x584.jpeg",
+        "name": "Молочный коктейль с печеньем Орео",
+        "types": [ 0,1 , 2],
+        "sizes": [0, 1,2],
+        "price": 159,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/9b962be9cef54d5ca6197939549e1d5c_584x584.jpeg",
+        "name": "Грибной Cтартер",
+        "types": [0,1,2],
+        "sizes": [0, 2],
+        "price": 159,
+        "category": 1,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/2c9ccc448944480caec63a60e16bc56e_584x584.jpeg",
+        "name": "Фонданы",
+        "types": [0 ,  2],
+        "sizes": [0,1, 2],
+        "price": 289,
+        "category": 1,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/c810798810a947cfb071ae825230bed4_584x584.jpeg",
+        "name": "Яблочный пирог",
+        "types": [0,1],
+        "sizes": [1, 2 ],
+        "price": 129,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/c8e4c62f824147ff8dc3a22d553144f4_584x584.jpeg",
+        "name": "Рулетики с ананасами + Рулетики с брусникой",
+        "types": [0, 1],
+        "sizes": [ 0,1,2],
+        "price": 195,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/6eacb241458547c68a570d86954568aa_584x584.jpeg",
+        "name": "Бруслетики",
+        "types": [0,2],
+        "sizes": [ 0 , 1 ],
+        "price": 275,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/865a71016d184985a95dd6aa74355c68_584x584.jpeg",
+        "name": "Сырники со сгущенным молоком",
+        "types": [0 , 1],
+        "sizes": [ 0, 1,  2],
+        "price": 289,
+        "category": 1,
+        "rating": 8
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/530f0fecb8b34b07b50d073bd7c2457b_584x584.jpeg",
+        "name": "Маффин Три шоколада",
+        "types": [ 0],
+        "sizes": [ 0,1,2],
+        "price": 89,
+        "category": 3,
+        "rating": 8
+      }
+    ],
+    "drinks" : [
+      {
+        "id": 0,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/49560ebe39a2495faaac054bcf98bc26_584x584.jpeg",
+        "name": "Марокканский пунш",
+        "types": [ 0, 1 , 2],
+        "sizes": [0, 2],
+        "price": 115,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/bc87655534d44acebcbbffab2ee0b822_584x584.jpeg",
+        "name": "Кофе Американо",
+        "types": [0,1,2],
+        "sizes": [1 ,2],
+        "price": 85,
+        "category": 1,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/Products/fde8164166c64a9f8705380508923194_584x584.jpeg",
+        "name": "Пряный латте",
+        "types": [0 ,  1],
+        "sizes": [0,1,2],
+        "price": 135,
+        "category": 1,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/3a8efa2baaea401b87e1c98ee237e972_584x584.jpeg",
+        "name": "Кофе Капучино",
+        "types": [0,1],
+        "sizes": [0, 1, 2 ],
+        "price": 135,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e0f4c057497a4189b9ef3260bcdaadd7_584x584.jpeg",
+        "name": "Кофе Карамельный капучино",
+        "types": [0, 1],
+        "sizes": [ 1,2],
+        "price": 135,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/17a0ea9b6f03429abf525d2d3fe6ab74_584x584.jpeg",
+        "name": "Кофе Ореховый латте",
+        "types": [0,1],
+        "sizes": [ 0 , 2 ],
+        "price": 135,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/24b5a20fa321453cbd00f933a5aff17e_584x584.jpeg",
+        "name": "Коффе Латте",
+        "types": [0 , 1],
+        "sizes": [ 0, 1],
+        "price": 135,
+        "category": 1,
+        "rating": 8
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/671431d06925451c93f806fb6356db1f_584x584.jpeg",
+        "name": "Смородиновый лимонад",
+        "types": [ 0,1],
+        "sizes": [ 0,1,2],
+        "price": 129,
+        "category": 3,
+        "rating": 8
+      }
+    ],
+    "combos" : [
+      {
+        "id": 0,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/6dca194599cd40cba642bef6bef34d4e_584x584.jpeg",
+        "name": "Комбо от 599 сомов",
+        "types": [ 0],
+        "sizes": [1],
+        "price": 599,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 1,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/f55b3c83e94b4c4d99b44f3e2e856af1_584x584.jpeg",
+        "name": "2 пиццы",
+        "types": [ 0, 1 ],
+        "sizes": [0 , 1, 2],
+        "price": 899,
+        "category": 0,
+        "rating": 4
+      },
+      {
+        "id": 2,
+        "imageUrl":"https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/ad51023e27d74b95ab90629007909a4e_584x584.jpeg",
+        "name": "Пицца и 2 закуски",
+        "types": [0 ,  1],
+        "sizes": [1,2],
+        "price": 799,
+        "category": 1,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/170976fb3b814ca3b95580087551c513_584x584.jpeg",
+        "name": "Комбо от 999 ₽",
+        "types": [0,1],
+        "sizes": [0, 1, 2 ],
+        "price": 999,
+        "category": 2,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/b7ecf4166f544029bb9ba88ec189b43b_584x584.jpeg",
+        "name": "4 Додстера",
+        "types": [0],
+        "sizes": [ 1],
+        "price": 499,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/c9f191d525ad4b918c420e9886b2550c_584x584.jpeg",
+        "name": "3 пиццы",
+        "types": [0,1],
+        "sizes": [ 0 ,1, 2 ],
+        "price": 1399,
+        "category": 3,
+        "rating": 8
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/87adbd29dc7f4df4abaaa32bdd44dead_584x584.jpeg",
+        "name": "5 пицц",
+        "types": [0 , 1],
+        "sizes": [1,2],
+        "price": 1999,
+        "category": 1,
+        "rating": 8
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/ComboTemplates/2128e936145846f585af731f8681c8a0_584x584.jpeg",
+        "name": "7 пицц",
+        "types": [0 , 1],
+        "sizes": [0,1,2],
+        "price": 2799,
+        "category": 1,
+        "rating": 8
+      }
+    ],
+    "sliders" : [
+      {
+        "id" : 0,
+        "imageUrl" : "https://dodopizza-a.akamaihd.net/static/Img/Banners/g_1616990971_c40bd9c255a74f3fb903df21be4952de.jpeg"
+      },
+      {
+        "id" : 1,
+        "imageUrl" : "https://dodopizza-a.akamaihd.net/static/Img/Banners/g_1619491356_1d9bb4ed9d9a4b86a6b8a505a59b2e8b.jpeg"
+      },
+      {
+        "id" : 2,
+        "imageUrl" : "https://dodopizza-a.akamaihd.net/static/Img/Banners/g_1619517207_52ec942c9a6d407d8550e0b9d76db84b.jpeg"
+      },
+      {
+        "id" : 3,
+        "imageUrl" : "https://dodopizza-a.akamaihd.net/static/Img/Banners/g_1619040813_9a0a4234a75646a1821b040d572eee46.jpeg"
+      },{
+        "id" : 4,
+        "imageUrl" : "https://dodopizza-a.akamaihd.net/static/Img/Banners/g_1596186007_4127271c5ae44204a1b03609135beff5.jpeg"
+      }
+
+    ]
+
+  }
