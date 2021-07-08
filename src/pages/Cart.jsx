@@ -1,11 +1,11 @@
-import React from 'react'
+import React  from 'react'
 import { observer } from 'mobx-react-lite'
 import Store from '../store/store'
 
-const Cart = observer(({item}) => {
-  console.log()
+const Cart = observer(({item }) => {
+  
     return (
-        <div className="content-cart">
+        <div className="content-cart" >
           <span className="cart__close" onClick={() => item(false)}>✘</span>
           {
             Store.count >= 1 ?
@@ -17,7 +17,7 @@ const Cart = observer(({item}) => {
               <div className="cart__title">{items.name}</div>
               <div className="cart__info">
                 <div className="cart__price">{items.price} сомов</div>
-                <span onClick={() => Store.removeElem(items.id)}>✘</span>
+                <img onClick={() => Store.removeElem(items.id)} src="https://image.flaticon.com/icons/png/512/3102/3102186.png" className="cart__trash"/>
               </div>
               </div>
             </div>

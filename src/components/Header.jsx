@@ -1,12 +1,11 @@
 import { observer } from 'mobx-react-lite';
-import React , { useState}from 'react'
+import React , { useState }from 'react'
 import Cart from '../pages/Cart'
 import Store from '../store/store'
 
 const Header = observer(() => {
   
   const [ show , setShow] = useState(false);
-
   
     return (
         <div>
@@ -20,7 +19,7 @@ const Header = observer(() => {
               </div>
             </div>
             <div className="header__cart">
-              <div className="button button--cart" onClick={() => setShow(!show)}>
+              <div className="button button--cart" onClick={() => setShow(!show)} >
                 <span>{Store.price} ₽</span>
                 <div className="button__delimiter"></div>
                 <svg
