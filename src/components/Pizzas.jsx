@@ -1,4 +1,5 @@
 import React , { useState }from 'react'
+import Store from '../store/store';
 
 function Pizzas({pizza , sizes , types }) {
     const [activeSize , setActiveSize]= useState(pizza.sizes[0]);
@@ -43,7 +44,7 @@ function Pizzas({pizza , sizes , types }) {
                   </div>
                   <div className="pizza-block__bottom">
                     <div className="pizza-block__price">от {pizza.price} сом</div>
-                    <div className="button button--outline button--add">
+                    <div className="button button--outline button--add" onClick={() => Store.addElem(pizza)}>
                       <svg
                         width="12"
                         height="12"
@@ -56,7 +57,7 @@ function Pizzas({pizza , sizes , types }) {
                           fill="white"
                         />
                       </svg>
-                      <span> Добавить</span>
+                      <span > Добавить</span>
                     </div>
                     </div>
               </div>

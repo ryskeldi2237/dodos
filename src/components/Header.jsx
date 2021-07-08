@@ -1,19 +1,27 @@
-import React from 'react'
+import { observer } from 'mobx-react-lite';
+import React , { useState}from 'react'
+import Cart from '../pages/Cart'
+import Store from '../store/store'
 
-function Header() {
+const Header = observer(() => {
+  
+  const [ show , setShow] = useState(false);
+
+  
     return (
-        <div className="header">
+        <div>
+          <div className="header">
           <div className="container">
-            <a href="/" className="header__logo">
+            <div className="header__logo">
               <img  src="img/logo.jpg" alt="Pizza logo" />
               <div>
                 <h1>DODO Pizza</h1>
                 <p>самая вкусная пицца во вселенной</p>
               </div>
-            </a>
+            </div>
             <div className="header__cart">
-              <a  href="/dodo/cart" className="button button--cart">
-                <span>0 ₽</span>
+              <div className="button button--cart" onClick={() => setShow(!show)}>
+                <span>{Store.price} ₽</span>
                 <div className="button__delimiter"></div>
                 <svg
                   width="18"
@@ -44,12 +52,16 @@ function Header() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>0</span>
-              </a>
+                <span>{Store.count}</span>
+              </div>
             </div>
           </div>
         </div>
+        {
+          show && <Cart item={setShow}/>
+        }
+        </div>
     )
-}
+})
 
 export default Header

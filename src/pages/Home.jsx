@@ -2,6 +2,7 @@ import React , { useState , useEffect }from 'react'
 import Main from '../components/Main'
 import Contact from '../components/Contact'
 import Content from '../components/Content'
+import Cart from './Cart'
 
 function Home() {
     const [load , setLoad] = useState([]);
@@ -41,6 +42,7 @@ function Home() {
              drinks={drinks} combos={combos} loading={load}
              />
             <Contact/>
+            
         </div>
     )
 }
