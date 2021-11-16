@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 
-class Store{
+class Store {
     constructor(){
         makeAutoObservable(this)
     }

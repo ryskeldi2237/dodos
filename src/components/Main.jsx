@@ -11,7 +11,6 @@ import Slider from "react-slick";
   };
   return (
     <Slider {...settings}>
-     
         {
           sliders.map((items , i) => (
             <div className="main">

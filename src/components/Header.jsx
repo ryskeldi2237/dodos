@@ -1,12 +1,10 @@
-import { observer } from 'mobx-react-lite';
 import React , { useState }from 'react'
+import { observer } from 'mobx-react-lite';
 import Cart from '../pages/Cart'
 import Store from '../store/store'
 
 const Header = observer(() => {
-  
   const [ show , setShow] = useState(false);
-  
     return (
         <div>
           <div className="header">

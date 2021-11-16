@@ -3,7 +3,6 @@ import { observer } from 'mobx-react-lite'
 import Store from '../store/store'
 
 const Cart = observer(({item }) => {
-  
     return (
         <div className="content-cart" >
           <span className="cart__close" onClick={() => item(false)}>✘</span>
@@ -42,23 +41,3 @@ const Cart = observer(({item }) => {
 })
 
 export default Cart
-
-
-{/* <div className="content">
-<div className="container container--cart">
-  
-</div> */}
-
-
-{/* <div className="cart__block">
-            <div className="cart__item">
-              <img src="https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg" alt="" className="cart__img"></img>
-              <div className="cart__wrapper">
-              <div className="cart__title">Пепперони Фреш</div>
-              <div className="cart__info">
-                <div className="cart__price">200 сом</div>
-                <span >✘</span>
-              </div>
-              </div>
-            </div>
-          </div> */}
