@@ -1,7 +1,8 @@
 import React , {useState}from 'react'
 import Pizzas from './Pizzas'
+import Loading from './Loading'
 
-function Content({items , pizzas , snacks , desserts , drinks , combos}) {
+function Content({items , load, data, response}) {
     const [activeItem , setActiveItem] = useState(0);
     function toggleActiveItem(index){
         setActiveItem(index)
@@ -29,27 +30,42 @@ function Content({items , pizzas , snacks , desserts , drinks , combos}) {
             <h2 className="content__title">Все {items[activeItem].toLowerCase()}</h2>
             <div className={activeItem === 0 ? 'content__items active-content' : 'content__items'}>
                 {
-                  pizzas.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )  
+                  load ?
+                  data.pizzas.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                  : 
+                  Array(8).fill(<Loading />)  
                 }
             </div>
             <div  className={activeItem === 1 ? 'content__items active-content' : 'content__items'}>
               {
-                combos.map(items => <Pizzas pizza={items} types={types} sizes={sizes}/>)
+                load ?
+                response.combos.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                : 
+                Array(8).fill(<Loading />) 
               }
             </div>
             <div  className={activeItem === 2 ? 'content__items active-content' : 'content__items'}>
               {
-                snacks.map(items => <Pizzas pizza={items} sizes={sizes} types={types} />)
+                  load ?
+                  data.snacks.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                  : 
+                  Array(8).fill(<Loading />)  
               }
             </div>
             <div  className={activeItem === 3 ? 'content__items active-content' : 'content__items'}>
               {
-                desserts.map(items => <Pizzas pizza={items} sizes={sizes} types={types} />)
+                load ?
+                data.desserts.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                : 
+                Array(8).fill(<Loading />) 
               }
             </div>
             <div  className={activeItem === 4 ? 'content__items active-content' : 'content__items'}>
               {
-                drinks.map(items => <Pizzas pizza={items} types={types} sizes={sizes}/>)
+                load ?
+                response.drinks.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                : 
+                Array(8).fill(<Loading />) 
               }
             </div>
             </div>

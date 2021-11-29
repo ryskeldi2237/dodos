@@ -4,37 +4,33 @@ import Contact from '../components/Contact'
 import Content from '../components/Content'
 
 function Home() {
-    const [sliders , setSliders] = useState([])
-    const [pizzas , setPizzas] = useState([]);
-    const [snacks , setSnacks] = useState([]);
-    const [desserts ,setDesserts] = useState([]); 
-    const [drinks , setDrinks] = useState([]);
-    const [combos , setCombos] = useState([]);
-
+    const [load, setLoad] = useState(false)
+    const [sliders , setSliders] = useState([]);
+    const [data, setData] = useState({});
+    const [response, setResponse] = useState({});
     const items = ['Пиццы' , 'Комбо' ,'Закуски' , 'Десерты' ,  'Напитки'];
+    
     useEffect(() => {
         fetch('https://my-json-server.typicode.com/ryskeldi2237/json/db')
         .then((response) => response.json())
-        .then((data) =>{ 
-        setPizzas(data.pizzas);
-        setSnacks(data.snacks);
-        setDesserts(data.desserts);
-    });
+        .then((data) => setData(data));
     fetch('https://my-json-server.typicode.com/ryskeldi2237/json-2/db')
         .then((response) => response.json())
-        .then((data) =>{ 
-        setSliders(data.sliders);
-        setDrinks(data.drinks);
-        setCombos(data.combos);
+        .then((response) =>{ 
+        setSliders(response.sliders);
+        setResponse(response)
+        setTimeout(() => {
+            setLoad(true)
+        }, 500)
     });
     } , [])
     return (
         <div>
-            <Main 
-             sliders={sliders}
-            />
-            <Content items={items} pizzas={pizzas} snacks={snacks} desserts={desserts}
-             drinks={drinks} combos={combos}/>
+            <div className="test">
+                <Main sliders={sliders}/>
+            </div>
+            <Content items={items} load={load} 
+                data={data} response={response}/>
             <Contact/>
         </div>
     )

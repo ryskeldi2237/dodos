@@ -14,7 +14,7 @@ import Slider from "react-slick";
         {
           sliders.map((items , i) => (
             <div className="main">
-            <img src={items.imageUrl}></img>
+              <img src={items.imageUrl}></img>
             </div>
           ))
         }
