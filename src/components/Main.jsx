@@ -21,5 +21,4 @@ import Slider from "react-slick";
     </Slider>
   );
 }
-
 export default Main

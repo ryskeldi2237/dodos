@@ -1,14 +1,17 @@
 import React , { useState }from 'react'
-import Store from '../store/store';
-
+import { useDispatch } from 'react-redux'
 function Pizzas({pizza , sizes , types }) {
     const [activeSize , setActiveSize]= useState(pizza.sizes[0]);
     const [activeType , setActiveType]= useState(pizza.types[0]);
+    const dispatch = useDispatch()
     function toggleActiveSize(index){
         setActiveSize(index)
     }
     function toggleActiveType(index){
         setActiveType(index)
+    }
+    const addProduct = (product) => {
+      dispatch({type: "ADD__PRODUCT", payload: product})
     }
     return ( 
         <div className="pizza-block">
@@ -44,7 +47,9 @@ function Pizzas({pizza , sizes , types }) {
             </div>
             <div className="pizza-block__bottom">
               <div className="pizza-block__price">от {pizza.price} сом</div>
-              <div className="button button--outline button--add" onClick={() => Store.addElem(pizza)}>
+              <div className="button button--outline button--add" 
+               onClick={() => addProduct(pizza)}
+              >
                 <svg
                   width="12"
                   height="12"

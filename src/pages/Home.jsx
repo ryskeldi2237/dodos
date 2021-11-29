@@ -2,10 +2,8 @@ import React , { useState , useEffect }from 'react'
 import Main from '../components/Main'
 import Contact from '../components/Contact'
 import Content from '../components/Content'
-import Cart from './Cart'
 
 function Home() {
-    const [load , setLoad] = useState([]);
     const [sliders , setSliders] = useState([])
     const [pizzas , setPizzas] = useState([]);
     const [snacks , setSnacks] = useState([]);
@@ -21,8 +19,6 @@ function Home() {
         setPizzas(data.pizzas);
         setSnacks(data.snacks);
         setDesserts(data.desserts);
-        setLoad(true);
-        
     });
     fetch('https://my-json-server.typicode.com/ryskeldi2237/json-2/db')
         .then((response) => response.json())
@@ -30,7 +26,6 @@ function Home() {
         setSliders(data.sliders);
         setDrinks(data.drinks);
         setCombos(data.combos);
-        
     });
     } , [])
     return (
@@ -39,10 +34,8 @@ function Home() {
              sliders={sliders}
             />
             <Content items={items} pizzas={pizzas} snacks={snacks} desserts={desserts}
-             drinks={drinks} combos={combos} loading={load}
-             />
+             drinks={drinks} combos={combos}/>
             <Contact/>
-            
         </div>
     )
 }

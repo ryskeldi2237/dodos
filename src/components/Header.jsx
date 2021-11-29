@@ -1,10 +1,10 @@
 import React , { useState }from 'react'
-import { observer } from 'mobx-react-lite';
+import { useSelector } from 'react-redux'
 import Cart from '../pages/Cart'
-import Store from '../store/store'
 
-const Header = observer(() => {
-  const [ show , setShow] = useState(false);
+const Header = () => {
+  const [show , setShow] = useState(false);
+  const products = useSelector(state => state.products);
     return (
         <div>
           <div className="header">
@@ -18,7 +18,7 @@ const Header = observer(() => {
             </div>
             <div className="header__cart">
               <div className="button button--cart" onClick={() => setShow(!show)} >
-                <span>{Store.price} ₽</span>
+                <span>10 ₽</span>
                 <div className="button__delimiter"></div>
                 <svg
                   width="18"
@@ -49,7 +49,7 @@ const Header = observer(() => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>{Store.count}</span>
+                <span>{products.length}</span>
               </div>
             </div>
           </div>
@@ -59,6 +59,6 @@ const Header = observer(() => {
         }
         </div>
     )
-})
+}
 
 export default Header

@@ -1,23 +1,29 @@
 import React  from 'react'
-import { observer } from 'mobx-react-lite'
-import Store from '../store/store'
+import { useDispatch,useSelector } from 'react-redux'
 
-const Cart = observer(({item }) => {
+const Cart = ({item}) => {
+  const dispatch = useDispatch()
+  const products = useSelector(state => state.products)
+  function removeProduct(id){
+    dispatch({type: 'REMOVE__PRODUCT', payload: id})
+  }
     return (
         <div className="content-cart" >
           <span className="cart__close" onClick={() => item(false)}>✘</span>
           {
-            Store.count >= 1 ?
-            Store.store.map((items , id) => (
-              <div className="cart__block">
-            <div className="cart__item">
-              <img src={items.imageUrl} alt="img" className="cart__img"></img>
-              <div className="cart__wrapper">
-              <div className="cart__title">{items.name}</div>
-              <div className="cart__info">
-                <div className="cart__price">{items.price} сомов</div>
-                <img onClick={() => Store.removeElem(items.id)} src="https://image.flaticon.com/icons/png/512/3102/3102186.png" className="cart__trash"/>
-              </div>
+            products.length >= 1 ?
+            products.map((product , index) => (
+            <div className="cart__block" key={`${product}__${index}`}>
+              <div className="cart__item">
+                <img src={product.imageUrl} alt="img" className="cart__img"></img>
+                <div className="cart__wrapper">
+                <div className="cart__title">{product.name}</div>
+                <div className="cart__info">
+                  <div className="cart__price">{product.price} ₽</div>
+                  <img 
+                  onClick={() => removeProduct(product.id)} 
+                  src="https://image.flaticon.com/icons/png/512/3102/3102186.png" className="cart__trash" alt="remove__icon"/>
+                </div>
               </div>
             </div>
           </div>
@@ -31,13 +37,11 @@ const Cart = observer(({item }) => {
               Для того, чтобы заказать пиццу, перейди на главную страницу.
             </p>
             <img src="img/empty-cart.png" alt="Empty cart" />
-            
           </div>
             </div>
           }
         </div>
-
     )
-})
+}
 
 export default Cart
