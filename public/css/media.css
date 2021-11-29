@@ -80,14 +80,11 @@
   .contact__block {
     left: 18%;
   }
+  .pizza-block, .pizza-block:not(:nth-of-type(4n)){
+    margin: 0 auto; 
+  }
 }
 @media (max-width: 560px) {
-  .pizza-block:not(:nth-of-type(4n)) {
-    margin-left: 40px;
-  }
-  .pizza-block {
-    margin-left: 40px;
-  }
   .contact {
     display: none;
   }

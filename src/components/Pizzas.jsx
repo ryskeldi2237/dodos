@@ -48,8 +48,7 @@ function Pizzas({pizza , sizes , types }) {
             <div className="pizza-block__bottom">
               <div className="pizza-block__price">от {pizza.price} сом</div>
               <div className="button button--outline button--add" 
-               onClick={() => addProduct(pizza)}
-              >
+               onClick={() => addProduct(pizza)}>
                 <svg
                   width="12"
                   height="12"
@@ -62,7 +61,7 @@ function Pizzas({pizza , sizes , types }) {
                     fill="white"
                   />
                 </svg>
-                <span > Добавить</span>
+                <span> Добавить</span>
               </div>
               </div>
         </div>

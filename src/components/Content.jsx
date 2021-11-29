@@ -18,7 +18,7 @@ function Content({items , load, data, response}) {
                   {
                       items.map((item , index) => (
                           <li
-                          key={`item_${index}`}
+                          key={`${item}_${index}`}
                           onClick={() => toggleActiveItem(index)}
                           className={ activeItem === index ? 'active' : ''}
                           >{item}</li>
@@ -28,42 +28,42 @@ function Content({items , load, data, response}) {
               </div>
             </div>
             <h2 className="content__title">Все {items[activeItem].toLowerCase()}</h2>
-            <div className={activeItem === 0 ? 'content__items active-content' : 'content__items'}>
+            <div className={`content__items ${activeItem === 0 ? 'active-content': ''}`}>
                 {
                   load ?
-                  data.pizzas.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                  data.pizzas.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
                   : 
                   Array(8).fill(<Loading />)  
                 }
             </div>
-            <div  className={activeItem === 1 ? 'content__items active-content' : 'content__items'}>
+            <div className={`content__items ${activeItem === 1 ? 'active-content': ''}`}>
               {
                 load ?
-                response.combos.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                response.combos.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
                 : 
                 Array(8).fill(<Loading />) 
               }
             </div>
-            <div  className={activeItem === 2 ? 'content__items active-content' : 'content__items'}>
+            <div className={`content__items ${activeItem === 2 ? 'active-content': ''}`}>
               {
                   load ?
-                  data.snacks.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                  data.snacks.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
                   : 
                   Array(8).fill(<Loading />)  
               }
             </div>
-            <div  className={activeItem === 3 ? 'content__items active-content' : 'content__items'}>
+            <div className={`content__items ${activeItem === 3 ? 'active-content': ''}`}>
               {
                 load ?
-                data.desserts.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                data.desserts.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
                 : 
                 Array(8).fill(<Loading />) 
               }
             </div>
-            <div  className={activeItem === 4 ? 'content__items active-content' : 'content__items'}>
+            <div className={`content__items ${activeItem === 4 ? 'active-content': ''}`}>
               {
                 load ?
-                response.drinks.map(items => <Pizzas pizza={items} sizes={sizes} types={types} /> )
+                response.drinks.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
                 : 
                 Array(8).fill(<Loading />) 
               }

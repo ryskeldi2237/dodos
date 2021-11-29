@@ -12,9 +12,9 @@ import Slider from "react-slick";
   return (
     <Slider {...settings}>
         {
-          sliders.map((items , i) => (
-            <div className="main">
-              <img src={items.imageUrl}></img>
+          sliders.map(item => (
+            <div className="main" key={item.id}>
+              <img src={item.imageUrl}></img>
             </div>
           ))
         }
