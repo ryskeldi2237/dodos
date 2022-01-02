@@ -2,7 +2,7 @@ import React , {useState}from 'react'
 import Pizzas from './Pizzas'
 import Loading from './Loading'
 
-const Content = ({items , load, data, response}) => {
+export default function Content({items , load, data, response}) {
     const [activeItem , setActiveItem] = useState(0);
     function toggleActiveItem(index){
         setActiveItem(index)
@@ -31,7 +31,7 @@ const Content = ({items , load, data, response}) => {
             <div className={`content__items ${activeItem === 0 ? 'active-content': ''}`}>
                 {
                   load ?
-                  data.pizzas.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
+                  data.pizzas.map((items, index) => <Pizzas key={`${items}__${index}`} pizza={items} sizes={sizes} types={types} /> )
                   : 
                   Array(8).fill(<Loading />)  
                 }
@@ -39,7 +39,7 @@ const Content = ({items , load, data, response}) => {
             <div className={`content__items ${activeItem === 1 ? 'active-content': ''}`}>
               {
                 load ?
-                response.combos.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
+                response.combos.map((items, index) => <Pizzas key={`${items}__${index}`} pizza={items} sizes={sizes} types={types}/> )
                 : 
                 Array(8).fill(<Loading />) 
               }
@@ -47,7 +47,7 @@ const Content = ({items , load, data, response}) => {
             <div className={`content__items ${activeItem === 2 ? 'active-content': ''}`}>
               {
                   load ?
-                  data.snacks.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
+                  data.snacks.map((items, index) => <Pizzas key={`${items}__${index}`} pizza={items} sizes={sizes} types={types}/> )
                   : 
                   Array(8).fill(<Loading />)  
               }
@@ -55,7 +55,7 @@ const Content = ({items , load, data, response}) => {
             <div className={`content__items ${activeItem === 3 ? 'active-content': ''}`}>
               {
                 load ?
-                data.desserts.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
+                data.desserts.map((items, index) => <Pizzas key={`${items}__${index}`} pizza={items} sizes={sizes} types={types}/> )
                 : 
                 Array(8).fill(<Loading />) 
               }
@@ -63,7 +63,7 @@ const Content = ({items , load, data, response}) => {
             <div className={`content__items ${activeItem === 4 ? 'active-content': ''}`}>
               {
                 load ?
-                response.drinks.map((items, index) => <Pizzas pizza={items} sizes={sizes} types={types} key={`${items}__${index}`}/> )
+                response.drinks.map((items, index) => <Pizzas key={`${items}__${index}`} pizza={items} sizes={sizes} types={types}/> )
                 : 
                 Array(8).fill(<Loading />) 
               }
@@ -72,4 +72,3 @@ const Content = ({items , load, data, response}) => {
         </div>
     )
 }
-export default React.memo(Content)
