@@ -1,6 +1,6 @@
 import React , { useState }from 'react'
 import { useDispatch } from 'react-redux'
-function Pizzas({pizza , sizes , types }) {
+export default function Pizzas({pizza , sizes , types }) {
     const [activeSize , setActiveSize]= useState(pizza.sizes[0]);
     const [activeType , setActiveType]= useState(pizza.types[0]);
     const dispatch = useDispatch()
@@ -67,5 +67,3 @@ function Pizzas({pizza , sizes , types }) {
         </div>
     )
 }
-
-export default Pizzas

@@ -1,7 +1,7 @@
 import React from 'react'
 import ContentLoader from "react-content-loader"
 
-function Loading() {
+export default function Loading() {
     return(
     <ContentLoader 
         speed={2}
@@ -19,5 +19,3 @@ function Loading() {
   </ContentLoader> 
     )
 }
-
-export default Loading

@@ -2,14 +2,9 @@ import React , { useState }from 'react'
 import { useSelector } from 'react-redux'
 import Cart from '../pages/Cart'
 
-const Header = () => {
+export default function Header() {
   const [show , setShow] = useState(false);
   const products = useSelector(state => state.products);
-  if(products.length > 0){
-    console.log('yeah')
-  }else{
-    console.log('sdf')
-  }
     return (
         <div>
           <div className="header">
@@ -65,5 +60,3 @@ const Header = () => {
         </div>
     )
 }
-
-export default Header

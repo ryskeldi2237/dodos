@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
- function Main({sliders}) {
+export default function Main({sliders}) {
   var settings = {
     dots: true,
     infinite: true,
@@ -21,4 +21,3 @@ import Slider from "react-slick";
     </Slider>
   );
 }
-export default Main

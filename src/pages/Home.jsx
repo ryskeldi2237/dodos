@@ -3,7 +3,7 @@ import Main from '../components/Main'
 import Contact from '../components/Contact'
 import Content from '../components/Content'
 
-function Home() {
+export default function Home() {
     const [load, setLoad] = useState(false)
     const [sliders , setSliders] = useState([]);
     const [data, setData] = useState({});
@@ -35,6 +35,3 @@ function Home() {
         </div>
     )
 }
-
-export default Home
-

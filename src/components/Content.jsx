@@ -2,7 +2,7 @@ import React , {useState}from 'react'
 import Pizzas from './Pizzas'
 import Loading from './Loading'
 
-function Content({items , load, data, response}) {
+const Content = ({items , load, data, response}) => {
     const [activeItem , setActiveItem] = useState(0);
     function toggleActiveItem(index){
         setActiveItem(index)
@@ -72,5 +72,4 @@ function Content({items , load, data, response}) {
         </div>
     )
 }
-
-export default Content
+export default React.memo(Content)

@@ -1,7 +1,7 @@
 import React  from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 
-const Cart = ({item}) => {
+export default function Cart({item}) {
   const dispatch = useDispatch()
   const products = useSelector(state => state.products)
   function removeProduct(id){
@@ -43,5 +43,3 @@ const Cart = ({item}) => {
         </div>
     )
 }
-
-export default Cart

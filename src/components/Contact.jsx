@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Contact() {
+export default function Contact() {
     return (
         <div className="contact">
         <img src="img/left.jpg" alt="img"></img>
@@ -12,5 +12,3 @@ function Contact() {
       </div>
     )
 }
-
-export default Contact
