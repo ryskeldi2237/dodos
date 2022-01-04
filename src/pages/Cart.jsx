@@ -3,11 +3,12 @@ import { useDispatch,useSelector } from 'react-redux'
 
 const Cart = ({item}) => {
   const dispatch = useDispatch()
-  const products = useSelector(state => state.products)
-  function removeProduct(id){
+  const products = useSelector(state => state.product.products)
+  function removeProduct(id, price){
     dispatch({type: 'REMOVE__PRODUCT', payload: id})
+    dispatch({type: 'REMOVE__PRICE', payload: price})
   }
-    return (
+  return (
         <div className="content-cart" >
           <span className="cart__close" onClick={() => item(false)}>✘</span>
           {
@@ -21,7 +22,7 @@ const Cart = ({item}) => {
                 <div className="cart__info">
                   <div className="cart__price">{product.price} ₽</div>
                   <img 
-                  onClick={() => removeProduct(product.id)} 
+                  onClick={() => removeProduct(product.id, product.price)} 
                   src="img/trash.png" className="cart__trash" alt="remove__icon"/>
                 </div>
               </div>

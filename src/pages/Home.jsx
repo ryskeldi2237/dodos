@@ -8,8 +8,6 @@ export default function Home() {
     const [sliders , setSliders] = useState([]);
     const [data, setData] = useState({});
     const [response, setResponse] = useState({});
-    const items = ['Пиццы' , 'Комбо' ,'Закуски' , 'Десерты' ,  'Напитки'];
-    
     useEffect(() => {
         fetch('https://my-json-server.typicode.com/ryskeldi2237/json/db')
         .then((response) => response.json())
@@ -29,7 +27,7 @@ export default function Home() {
             <div className="test">
                 <Main sliders={sliders}/>
             </div>
-            <Content items={items} load={load} 
+            <Content load={load} 
                 data={data} response={response}/>
             <Contact/>
         </div>

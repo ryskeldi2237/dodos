@@ -4,7 +4,8 @@ import Cart from '../pages/Cart'
 
 export default function Header() {
   const [show , setShow] = useState(false);
-  const products = useSelector(state => state.products);
+  const products = useSelector(state => state.product.products);
+  const price = useSelector(state => state.price.price);
     return (
         <div>
           <div className="header">
@@ -18,7 +19,7 @@ export default function Header() {
             </div>
             <div className="header__cart">
               <div className="button button--cart" onClick={() => setShow(!show)} >
-                <span>10 ₽</span>
+                <span>{price} ₽</span>
                 <div className="button__delimiter"></div>
                 <svg
                   width="18"

@@ -1,7 +1,7 @@
 const defaultState = {
     products: []
 }
-export const reducer = (state = defaultState, action) => {
+export const product = (state = defaultState, action) => {
     switch(action.type){
         case 'ADD__PRODUCT' :
             return {...state, products: [...state.products, action.payload]}

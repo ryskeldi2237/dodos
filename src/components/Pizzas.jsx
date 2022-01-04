@@ -12,14 +12,13 @@ export default function Pizzas({pizza , sizes , types }) {
     }
     const addProduct = (product) => {
       dispatch({type: "ADD__PRODUCT", payload: product})
+      dispatch({type: "ADD__PRICE", payload: product})
     }
     return ( 
         <div className="pizza-block">
-            <img
-              className="pizza-block__image"
-              src={pizza.imageUrl}
-              alt="Pizza"
-            />
+          <img
+            className="pizza-block__image"
+            src={pizza.imageUrl}alt="Pizza"/>
             <h4 className="pizza-block__title">{pizza.name}</h4>
             <div className="pizza-block__selector">
               <ul>
@@ -46,7 +45,7 @@ export default function Pizzas({pizza , sizes , types }) {
               </ul>
             </div>
             <div className="pizza-block__bottom">
-              <div className="pizza-block__price">от {pizza.price} сом</div>
+              <div className="pizza-block__price">от {pizza.price} ₽</div>
               <div className="button button--outline button--add" 
                onClick={() => addProduct(pizza)}>
                 <svg

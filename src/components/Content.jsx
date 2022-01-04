@@ -2,12 +2,13 @@ import React , {useState}from 'react'
 import Pizzas from './Pizzas'
 import Loading from './Loading'
 
-export default function Content({items , load, data, response}) {
+export default function Content({ load, data, response}) {
     const [activeItem , setActiveItem] = useState(0);
     function toggleActiveItem(index){
         setActiveItem(index)
     }
-    const sizes = ['маленький' , 'средний' , 'большой'],
+    const items = ['Пиццы' , 'Комбо' ,'Закуски' , 'Десерты' ,  'Напитки'],
+          sizes = ['маленький' , 'средний' , 'большой'],
           types = ['тонкое' , 'традиционное'];
     return (
         <div className="content">
@@ -18,7 +19,7 @@ export default function Content({items , load, data, response}) {
                   {
                       items.map((item , index) => (
                           <li
-                          key={`${item}_${index}`}
+                          key={item}
                           onClick={() => toggleActiveItem(index)}
                           className={ activeItem === index ? 'active' : ''}
                           >{item}</li>
